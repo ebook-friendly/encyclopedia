@@ -1,7 +1,5 @@
 on: 
-  push:
-    branches: main
-    paths: LICENSE
+  - push
 jobs:
   main:
     runs-on: ubuntu-latest

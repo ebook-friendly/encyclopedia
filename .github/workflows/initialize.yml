@@ -4,4 +4,8 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, World!"
+      - env:
+          GITHUB_CONTEXT: ${{toJson(github)}}
+        run: |
+          echo "$GITHUB_CONTEXT"
+

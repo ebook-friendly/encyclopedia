@@ -1,0 +1,5 @@
+on: push
+  path: LICENSE
+job:
+  steps:
+    echo "Hello, World!"

@@ -4,8 +4,5 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - env:
-          GITHUB_CONTEXT: ${{toJson(github)}}
-        run: |
-          echo "$GITHUB_CONTEXT"
+      - uses: ebookipedia/install@main
 
